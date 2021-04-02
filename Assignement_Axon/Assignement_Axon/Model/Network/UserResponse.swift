@@ -8,5 +8,5 @@
 import Foundation
 
 struct Users {
-    var results = [User]
+    var results = [User]()
 }
