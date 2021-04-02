@@ -14,10 +14,13 @@ struct User: Decodable {
     let dob, registered: Dob
     let phone, cell: String
     let picture: Picture
+    var fullName: String {
+        return "\(name.title) \(name.first) \(name.last)"
+    }
 }
 
 // MARK: - Name
-struct Name: Codable {
+struct Name: Decodable {
     let title, first, last: String
 }
 
@@ -28,6 +31,6 @@ struct Dob: Decodable {
 }
 
 // MARK: - Picture
-struct Picture: Codable {
+struct Picture: Decodable {
     let large, medium, thumbnail: String
 }
