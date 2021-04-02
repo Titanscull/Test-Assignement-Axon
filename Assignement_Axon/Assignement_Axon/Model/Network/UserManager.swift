@@ -10,16 +10,17 @@ import Alamofire
 
 class UserManager: UserEndpointProtocol {
     
+    var totalUsers = 20
+    private lazy var url = "https://randomuser.me/api/?results=\(totalUsers)"
+    
     func fetchUsers() {
         
-        let request = AF.request("https://randomuser.me/api/?results=20")
+        let request = AF.request(url)
         
         request.responseDecodable(of: Users.self) { (response) in
             guard let users = response.value else {return}
             print(users.results.first!.fullName)
+            
         }
-        
     }
-    
-    
 }
