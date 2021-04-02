@@ -56,15 +56,47 @@
 		EEECEE0C2615D8D20062A4B9 /* Assignement_Axon */ = {
 			isa = PBXGroup;
 			children = (
+				EEF5991D26170E8A00402861 /* Model */,
+				EEF5991E26170E9400402861 /* View */,
+				EEF5991F26170EB700402861 /* Controller */,
 				EEECEE0D2615D8D20062A4B9 /* AppDelegate.swift */,
 				EEECEE0F2615D8D20062A4B9 /* SceneDelegate.swift */,
-				EEECEE112615D8D20062A4B9 /* ViewController.swift */,
-				EEECEE132615D8D20062A4B9 /* Main.storyboard */,
 				EEECEE162615D8D20062A4B9 /* Assets.xcassets */,
 				EEECEE182615D8D30062A4B9 /* LaunchScreen.storyboard */,
 				EEECEE1B2615D8D30062A4B9 /* Info.plist */,
 			);
 			path = Assignement_Axon;
+			sourceTree = "<group>";
+		};
+		EEF5991D26170E8A00402861 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEF5992026170EE600402861 /* Network */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEF5991E26170E9400402861 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEECEE132615D8D20062A4B9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEF5991F26170EB700402861 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEECEE112615D8D20062A4B9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EEF5992026170EE600402861 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
