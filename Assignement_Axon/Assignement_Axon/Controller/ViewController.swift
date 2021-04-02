@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
+    
+    private let manager = UserManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        manager.fetchUsers()
     }
-
-
 }
-
